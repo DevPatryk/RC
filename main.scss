@@ -1,0 +1,848 @@
+@use "./colors" as c;
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-size: 62.5%;
+}
+html{
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Inter", sans-serif;
+}
+
+.box-header {
+	position: relative;
+	width: 100%;
+	height: 170em;
+	background-image: url("./img/porsche-header-desktop.jpg");
+	background-position: center;
+	background-size: cover;
+	z-index: -100;
+
+	.box-header-text-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		font-size: 60px;
+		color: white;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+
+		.main-web-title {
+			text-transform: uppercase;
+			font-size: 2.5rem;
+		}
+
+		.under-title-surname {
+			font-size: 1.8rem;
+			align-self: flex-end;
+			margin-right: 1em;
+			font-family: "Meow Script", cursive;
+		}
+
+		.header-description {
+			font-size: 2rem;
+			margin-top: 3em;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.box-header::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	background-color: rgba(0, 0, 0, 0.658);
+}
+.under-navigation {
+	display: none;
+}
+
+.about-description-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding-bottom: 20em;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+
+	.section-title-about {
+		text-transform: uppercase;
+		text-align: center;
+		padding: 3em 2em;
+		font-size: 1.5rem;
+		color: white;
+	}
+
+	.image-and-text-box-owner{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		
+		height: 200em;
+		width: 100em;
+		.img-box{
+			width: 100%;
+			height: 100%;
+background-image: url('./img/RobertZP.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+filter: blur(-10px);
+
+		}
+		.text-box{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			margin-top: 1em;
+			width: 100%;
+			height: 100%;
+			font-size: 1.2rem;
+			color: white;
+		}
+	}
+
+	.strong-site-container{
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 30em;
+
+		.box{
+			width: 120em;
+			height: 120em;
+			margin-bottom: 20em;
+		.img-box {
+			margin-bottom: 10em;
+			width: 100%;
+			height: 50%;
+			background-image: url('https://rclinic.academy/wp-content/uploads/2022/02/wyjatkowe_podejscie2-100x100.png');
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+
+		}
+.text{
+	width: 100%;
+	height: 50%;
+	color: white;
+    font-size: 1.2rem;
+	text-align: center;
+}
+
+.one{
+	background-image: url('https://rclinic.academy/wp-content/uploads/2022/02/dzialanie_z_pasja2-100x100.png');
+}
+.two{
+background-image: url('https://rclinic.academy/wp-content/uploads/2022/02/wyjatkowe_podejscie2-100x100.png');
+}
+.three{
+background-image: url('https://rclinic.academy/wp-content/uploads/2022/02/zadowoleni_klienci2-100x100.png');
+}
+
+	}
+	
+	}
+}
+
+.hero-image-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10em 0em;
+	background-color: black;
+	width: 100%;
+	height: 40em;
+	background-image: url("./img/hero-image.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	.hero-text {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		color: white;
+	}
+}
+
+.continue-black-section {
+	width: 100%;
+	height: 20em;
+	background-color: black;
+}
+
+.cars-section {
+	background-color: #2d2d2a;
+
+	.cars-section-title {
+		padding: 3em 0em;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1.5rem;
+		text-align: center;
+		color: white;
+	}
+
+	.offer-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		.container-offer {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 220em;
+			height: 120em;
+			margin: 5em 2em;
+			border-radius: 10px;
+			background-color: #353831;
+			.img-sec {
+				background-size: contain;
+					background-repeat: no-repeat;
+					background-position: center;
+				height: 100%;
+				width: 70%;
+			}
+			.one {
+				background-image: url("https://vipcarkrakow.pl/app/uploads/2019/09/7.jpg");
+			}
+			.two {
+				background-image: url("https://www.autostylizacja.pl/wp-content/uploads/2019/10/BMW-X6-SATIN-WHITE-PEARL-2.jpg");
+			}
+
+			.three {
+				background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcQbhGyNQrN0p-_ox7ujyKdxA9GIt6-QeIrQ&usqp=CAU");
+			}
+			.four {
+				background-image: url("https://namasce.pl/wp-content/uploads/2022/10/mercedes-amg-cle-53-niezalezna-grafika.jpg");
+			}
+			.five {
+				background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BMW_M4_%28G82%29_IMG_4183.jpg/1200px-BMW_M4_%28G82%29_IMG_4183.jpg");
+			}
+			.six {
+				background-image: url("https://i.wpimg.pl/c/1280x/m.autokult.pl/dsc0674-ac920d3267673bd63470b3f5.jpg");
+			}
+			.seven {
+				background-image: url("https://i.4wzk.pl/gallery/615/50563_1.jpg");
+			}
+			.eight {
+				background-image: url("https://motopodprad.pl/wp-content/uploads/2022/04/Porsche-911-sport-classic-1.jpeg");
+			}
+			.desc-sec {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				width: 50%;
+				height: 100%;
+				font-size: 3rem;
+				.brand {
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+				.more {
+					background-color: #3f5e5a;
+					padding: 0.5em;
+					border-radius: 10px;
+					border: none;
+					text-transform: uppercase;
+				}
+			}
+			.tr {
+				color: white;
+				margin: 0.5em;
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
+.opinion-section {
+	background-color: #2d2d2a;
+	padding-bottom:25em ;
+	.opinion-title {
+		padding: 3em 0em;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1.5rem;
+		text-align: center;
+		color: white;
+	}
+	.opinion-container {
+		background-color: #2d2d2a;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.opinion-box {
+			margin: 3em;
+			width: 210em;
+			height: 80em;
+			background-color: #353831;
+			color: white;
+
+			.up-box {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 0.5em;
+				width: 100%;
+				height: 50%;
+
+				.img-avatar {
+					width: 90em;
+					height: 90em;
+					background-image: url("./img/faceOpinion-mini.jpg");
+					background-size: cover;
+					background-position: center;
+					border-radius: 100%;
+					border: 1px solid white;
+				}
+				.name {
+					font-size: 1.5rem;
+					margin-left: 0.5em;
+					font-weight: bold;
+				}
+				.date {
+					font-size: 1rem;
+				}
+			}
+			.description {
+				width: 100%;
+				height: 50%;
+				text-align: center;
+				font-size: 1.1rem;
+			}
+		}
+		.another {
+			background-color: #2d2d2a;
+			border: 1px solid gold;
+		}
+	}
+}
+
+.contact-section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 0em;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+
+
+
+
+
+
+
+	.contact-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 130em;
+		height: 190em;
+		background-color: black;
+		border-radius: 10px;
+		color: white;
+
+
+		.contact-us {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 2rem;
+			margin-bottom: 1em;
+		}
+		.contact-down-box {
+			
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			text-align:center;
+			
+			width: 100%;
+			height: 70%;
+			
+			.fa {
+				font-size: 2.5rem;
+				margin-right: 0.5em;
+				color: gold;
+			}
+			p {
+				
+				text-align: center;
+				font-size: 1.5rem;
+				margin: 1em 2em;
+				
+				
+			}
+		.underline{
+			width: 100%;
+			height: 2px;
+			background-color: gold;
+
+		}
+			.media{
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				width: 100%;
+				.md{
+					margin-top: 2em;
+					font-size: 3rem;
+					
+				}
+			}
+		}
+	}
+}
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.box-header {
+		.box-header-text-container {
+			.main-web-title {
+				text-transform: uppercase;
+				font-size: 4.5rem;
+			}
+
+			.under-title-surname {
+				font-size: 3rem;
+				align-self: flex-end;
+				margin-right: 3em;
+			}
+
+			.header-description {
+				font-size: 3rem;
+				margin-top: 2.2em;
+			}
+		}
+	}
+	.opinion-section {
+		.opinion-title {
+			padding: 3em 0em;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 2rem;
+		}
+		.opinion-container {
+			background-color: #2d2d2a;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			.opinion-box {
+				padding: 1em;
+				margin: 3em;
+				width: 230em;
+				height: 100em;
+
+				.up-box {
+					.img-avatar {
+						width: 120em;
+						height: 120em;
+						background-image: url("/.img/faceOpinion-mini.jpg");
+						background-size: cover;
+						background-position: center;
+						border-radius: 100%;
+						border: 1px solid white;
+					}
+					.name {
+						font-size: 1.8rem;
+						margin-left: 0.5em;
+						font-weight: bold;
+					}
+					.date {
+						font-size: 1.5rem;
+					}
+				}
+				.description {
+					padding: 1.2em;
+					text-align: center;
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.box-header {
+		.box-header-text-container {
+			.main-web-title {
+				text-transform: uppercase;
+				font-size: 7.5rem;
+			}
+
+			.under-title-surname {
+				font-size: 5rem;
+				align-self: flex-end;
+				margin-right: 13em;
+			}
+
+			.header-description {
+				font-size: 3rem;
+				margin-top: 2.2em;
+			}
+		}
+	}
+	.about-description-section {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		padding-bottom: 50em;
+		height: 100%;
+		width: 100%;
+		background-color: black;
+
+		.section-title-about {
+			text-transform: uppercase;
+			text-align: center;
+			padding: 5em 2em;
+			font-size: 3.5rem;
+			color: white;
+		}
+		.image-and-text-box-owner{
+			display: flex;
+			justify-content: center;
+			flex-direction: row;
+			align-items: center;
+			
+			height: 200em;
+			width: 500em;
+			.img-box{
+				width: 100%;
+				height: 100%;
+background-image: url('./img/RobertZP.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+filter: blur(-10px);
+
+			}
+			.text-box{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-left: 1em;
+				width: 100%;
+				height: 100%;
+				font-size: 1.8rem;
+				color: white;
+			}
+		}
+		
+		.strong-site-container{
+
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-top: 80em;
+			width: 100%;
+	
+			.box{
+				width: 200em;
+				height: 220em;
+				margin-bottom: 20em;
+			.img-box {
+				margin-bottom: 10em;
+				width: 100%;
+				height: 50%;
+				background-image: url('https://rclinic.academy/wp-content/uploads/2022/02/wyjatkowe_podejscie2-100x100.png');
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+	
+			}
+	.text{
+		width: 100%;
+		height: 50%;
+		color: white;
+		font-size: 2rem;
+		text-align: center;
+	}
+	
+	
+	.one{
+		background-image: url('https://rclinic.academy/wp-content/uploads/2022/02/dzialanie_z_pasja2-100x100.png');
+	}
+	.two{
+	background-image: url('https://rclinic.academy/wp-content/uploads/2022/02/wyjatkowe_podejscie2-100x100.png');
+	}
+	.three{
+	background-image: url('https://rclinic.academy/wp-content/uploads/2022/02/zadowoleni_klienci2-100x100.png');
+	}
+		}
+		
+		
+		}
+	}
+	
+	.hero-image-section {
+		padding: 50em 0em;
+		height: 100em;
+		background-image: url("./img/hero-image-big.jpg");
+		background-size: cover;
+		background-position-y: -380px;
+		.hero-text {
+			font-size: 4rem;
+			text-transform: uppercase;
+			color: white;
+		}
+	}
+
+	.cars-section {
+		background-color: #2d2d2a;
+
+		.cars-section-title {
+			padding: 3em 0em;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 2.5rem;
+			text-align: center;
+			color: white;
+		}
+		.offer-box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+
+			.container-offer {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 350em;
+				height: 150em;
+				margin: 15em 0em;
+				border-radius: 10px;
+				background-color: #353831;
+				.img-sec {
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: center;
+					height: 100%;
+					width: 70%;
+				}
+				.one {
+					background-image: url("https://vipcarkrakow.pl/app/uploads/2019/09/7.jpg");
+				}
+				.two {
+					background-image: url("https://www.autostylizacja.pl/wp-content/uploads/2019/10/BMW-X6-SATIN-WHITE-PEARL-2.jpg");
+				}
+
+				.three {
+					background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcQbhGyNQrN0p-_ox7ujyKdxA9GIt6-QeIrQ&usqp=CAU");
+				}
+				.four {
+					background-image: url("https://namasce.pl/wp-content/uploads/2022/10/mercedes-amg-cle-53-niezalezna-grafika.jpg");
+				}
+				.five {
+					background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BMW_M4_%28G82%29_IMG_4183.jpg/1200px-BMW_M4_%28G82%29_IMG_4183.jpg");
+				}
+				.six {
+					background-image: url("https://i.wpimg.pl/c/1280x/m.autokult.pl/dsc0674-ac920d3267673bd63470b3f5.jpg");
+				}
+				.seven {
+					background-image: url("https://i.4wzk.pl/gallery/615/50563_1.jpg");
+				}
+				.eight {
+					background-image: url("https://motopodprad.pl/wp-content/uploads/2022/04/Porsche-911-sport-classic-1.jpeg");
+				}
+				.desc-sec {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					width: 50%;
+					height: 100%;
+					font-size: 3rem;
+					.brand {
+						text-transform: uppercase;
+						font-weight: bold;
+					}
+					.more {
+						background-color: #3f5e5a;
+						padding: 0.5em;
+						border-radius: 10px;
+						border: none;
+						text-transform: uppercase;
+					}
+					.more:hover{
+						cursor: pointer;
+						background-color: #56837d;
+					}
+				}
+				.tr {
+					color: white;
+					margin: 0.5em;
+				}
+			}
+		}
+	}
+
+	.under-navigation {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		width: 100%;
+		background-color: black;
+
+		font-size: 3rem;
+
+		a {
+			padding: 1em;
+			margin: 0.5em;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: white;
+
+		}
+		a:hover{
+			background-color: #fff;
+			color: black;
+			transition: 1s;
+		}
+	}
+	.opinion-section {
+		padding-bottom: 50em;
+		.opinion-title {
+		text-transform: uppercase;
+			text-align: center;
+			padding: 5em 2em;
+			font-size: 3.5rem;
+			color: white;
+		}
+		.opinion-container {
+			background-color: #2d2d2a;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			.opinion-box {
+				margin: 3em 10em;
+				width: 280em;
+				height: 130em;
+
+				.up-box {
+					.img-avatar {
+						width: 120em;
+						height: 120em;
+						background-image: url("./img/faceOpinion-mini.jpg");
+						background-size: cover;
+						background-position: center;
+						border-radius: 100%;
+						border: 1px solid white;
+					}
+					.name {
+						font-size: 2.5rem;
+						margin-left: 0.5em;
+						font-weight: bold;
+					}
+					.date {
+						font-size: 1.5rem;
+					}
+				}
+				.description {
+					padding: 1.2em;
+					text-align: center;
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+
+
+	.contact-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0em 0em 10em;
+		background-color: black;
+
+	
+		.contact-container {
+			width: 330em;
+			height: 340em;
+			background-color: black;
+			border-radius: 10px;
+			color: white;
+	
+			.contact-us {
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 4rem;
+				margin-bottom: 1em;
+			}
+			.contact-down-box {
+				
+				
+				width: 100%;
+				height: 70%;
+				
+				.fa {
+					font-size: 5rem;
+					margin-right: 0.5em;
+					color: gold;
+				}
+				p {
+					font-size: 3rem;
+				
+					margin-bottom: 1em;
+					text-align:initial;
+					width: 100%;
+
+					
+				}
+				.media{
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+					width: 100%;
+					.md{
+						margin-top: 2em;
+						font-size: 6rem;
+						
+					}
+					.md:hover{
+						color: gold;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}
